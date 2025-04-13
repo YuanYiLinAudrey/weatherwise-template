@@ -28,7 +28,7 @@ Have two different AI assistants critique each other's solutions:
 
 Example prompt for the critique phase:
 ```
-I received this code suggestion from another AI assistant for parsing weather questions. Can you analyze it and identify:
+I received this code suggestion from another AI assistant for parsing weather questions. Can you analyse it and identify:
 1. Potential edge cases it might miss
 2. Performance considerations
 3. Ways to make it more robust
@@ -39,7 +39,7 @@ I received this code suggestion from another AI assistant for parsing weather qu
 
 ### Different AIs for Different Roles
 
-Assign different AI assistants to specialized roles:
+Assign different AI assistants to specialised roles:
 
 - **Architect AI**: Help with overall design and structure
 - **Implementation AI**: Generate specific code solutions
@@ -66,7 +66,7 @@ Ask AI to explain existing code to build your understanding:
 
 1. Find relevant code examples (e.g., weather API usage)
 2. Ask the AI to explain how it works line-by-line
-3. Ask what could be improved or customized
+3. Ask what could be improved or customised
 4. Use this understanding to build your own implementation
 
 Example:
@@ -89,8 +89,8 @@ This helps you understand how adding context affects solutions and prevents the 
 ### Persona-Based Prompting
 Ask the AI to adopt different perspectives:
 
-- "As a UX designer, how would you organize the weather dashboard interface?"
-- "As a data scientist, what visualizations would be most informative for weather data?"
+- "As a UX designer, how would you organise the weather dashboard interface?"
+- "As a data scientist, what visualisations would be most informative for weather data?"
 - "As a security expert, what should I consider when handling location data from users?"
 
 Document how these different perspectives influenced your design decisions.
@@ -111,7 +111,7 @@ Document how different prompting styles yield different quality responses.
 Have the AI help narrate the development journey:
 
 ```
-I've implemented the weather data retrieval function and visualization components. Can you help me create a narrative that explains:
+I've implemented the weather data retrieval function and visualisation components. Can you help me create a narrative that explains:
 1. The challenges I encountered
 2. The design decisions I made
 3. How the components work together
@@ -129,7 +129,7 @@ I'm considering these three approaches for the user interface:
 2. Interactive widgets with ipywidgets
 3. A hybrid approach
 
-Can you analyze the pros and cons of each for this specific project?
+Can you analyse the pros and cons of each for this specific project?
 ```
 
 Document how this analysis informed your implementation choice.
@@ -200,7 +200,7 @@ The quality of your AI interactions will be evaluated based on how effectively y
 
 For specific prompts related to the six core programming foundations (Input, Output, Store, Calculate, Decisions, and Repeat), refer to the **Prompt Templates** document provided with this assignment. These templates offer structured ways to ask about specific programming concepts you'll need for your Weather Advisor project.
 
-The prompt templates are organized by programming concept and include:
+The prompt templates are organised by programming concept and include:
 - Concept exploration prompts
 - Implementation prompts
 - Debugging prompts
