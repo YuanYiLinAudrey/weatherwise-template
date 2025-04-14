@@ -348,7 +348,7 @@ Your submission should include:
 
 1. **GitHub Repository**
    - All project files must be uploaded to your GitHub repository
-   - Invite your instructor to your repository (GitHub username: michael-adci)
+   - Invite your instructor to your repository (GitHub username: michael-borck)
    - Your repository should include:
      - Google Colab notebook (.ipynb file)
      - README.md with project overview and setup instructions

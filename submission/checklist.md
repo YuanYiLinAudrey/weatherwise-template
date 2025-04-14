@@ -20,7 +20,7 @@ Use this checklist to track your progress and ensure your Weather Advisor projec
 
 - [ ] Repository created from template
 - [ ] README.md updated with your project information
-- [ ] Instructor (michael-adci) invited to your repository
+- [ ] Instructor (michael-borck) invited to your repository
 
 ## Notebook Organisation
 
