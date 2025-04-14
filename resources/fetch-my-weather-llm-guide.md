@@ -44,7 +44,7 @@ fetch_my_weather.get_weather(
     is_moon: bool = False,
     moon_date: Optional[str] = None,
     moon_location_hint: Optional[str] = None,
-    format: Literal["text", "json", "png"] = "json",
+    format: Literal["text", "json", "raw_json", "png"] = "json",
     use_mock: Optional[bool] = None,
 ) -> Union[str, bytes, Dict[str, Any], WeatherResponse]
 ```
@@ -62,14 +62,15 @@ fetch_my_weather.get_weather(
 | `is_moon` | bool | If `True`, show moon phase instead of weather |
 | `moon_date` | str | Date for moon phase in `YYYY-MM-DD` format (with `is_moon=True`) |
 | `moon_location_hint` | str | Location hint for moon phase (e.g., `,+US`, `,+Paris`) |
-| `format` | str | Output format: `"text"`, `"json"` (default), or `"png"` |
+| `format` | str | Output format: `"text"`, `"json"` (default, Pydantic model), `"raw_json"` (Python dict), or `"png"` |
 | `use_mock` | bool | If set, overrides the global mock mode setting for this request only |
 
 #### Return Value
 
 - If successful with `format="text"`: Returns the weather report as a string.
 - If successful with `format="png"`: Returns the PNG image data as bytes.
-- If successful with `format="json"`: Returns a `WeatherResponse` Pydantic model (or dict if working with older versions).
+- If successful with `format="json"`: Returns a `WeatherResponse` Pydantic model.
+- If successful with `format="raw_json"`: Returns the raw JSON data as a Python dictionary.
 - If an error occurs: Returns an error message string (starting with "Error:").
 
 ### Configuration Functions
@@ -129,6 +130,26 @@ if weather.current_condition:
         
     print(f"Humidity: {current.humidity}%")
     print(f"Wind: {current.windspeedKmph} km/h, {current.winddir16Point}")
+```
+
+### Using Raw JSON Format
+
+```python
+import fetch_my_weather
+
+# Get weather data as a raw Python dictionary
+weather = fetch_my_weather.get_weather(location="London", format="raw_json")
+
+# Access data using dictionary key/value access
+if "current_condition" in weather and weather["current_condition"]:
+    current = weather["current_condition"][0]
+    print(f"Temperature: {current.get('temp_C')}°C / {current.get('temp_F')}°F")
+    
+    if "weatherDesc" in current and current["weatherDesc"]:
+        print(f"Condition: {current['weatherDesc'][0]['value']}")
+        
+    print(f"Humidity: {current.get('humidity')}%")
+    print(f"Wind: {current.get('windspeedKmph')} km/h, {current.get('winddir16Point')}")
 ```
 
 ### Using Mock Mode
