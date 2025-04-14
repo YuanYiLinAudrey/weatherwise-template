@@ -383,13 +383,13 @@ Your submission should include:
 
 | Criterion | Weighting | Description |
 |-----------|-----------|-------------|
-| **Functionality** | 20% | Application works as expected; features are complete |
-| **Code Quality** | 15% | Well-structured, readable code with proper documentation |
-| **Notebook Organisation** | 10% | Logical cell-based structure; clear section organisation |
-| **User Experience** | 10% | Interface is intuitive and information is clearly presented |
-| **Intentional Prompting** | 25% | Documentation of AI interactions; evidence of strategic prompting |
-| **AI Conversation Quality** | 10% | Comprehensive conversation documentation; thoughtful interactions |
-| **Technical Implementation** | 10% | Appropriate use of libraries; efficient implementation |
+| **Functionality** | 15% | Application works as expected; features are complete (demonstrate development process in AI conversations) |
+| **Code Quality** | 10% | Well-structured, readable code with proper documentation (show code refinement through AI conversations) |
+| **Notebook Organisation** | 10% | Logical cell-based structure; clear section organisation (reflect planning discussions in AI conversations) |
+| **User Experience** | 10% | Interface is intuitive and information is clearly presented (show UI design iterations in AI conversations) |
+| **Intentional Prompting** | 30% | Documentation of AI interactions; evidence of strategic prompting techniques that improved your implementation |
+| **AI Conversation Quality** | 15% | Comprehensive conversation documentation showing problem-solving journey and thoughtful interactions |
+| **Technical Implementation** | 10% | Appropriate use of libraries and efficient implementation (demonstrate technical decision-making in AI conversations) |
 
 Remember, this project is your opportunity to showcase everything you've learnt in this course. We're excited to see your creative solutions!
 
