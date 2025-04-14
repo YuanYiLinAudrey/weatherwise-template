@@ -41,13 +41,13 @@ This project helps you learn:
 ## Assessment Approach
 
 You'll be graded on:
-- Whether your app works as expected (20%)
-- Quality of your code (15%)
-- How well you organised your work (10%)
-- How easy your app is to use (10%)
-- How effectively you used AI tools (25%)
-- Quality of your AI interactions (10%)
-- Technical implementation choices (10%)
+- Whether your app works as expected (15%) - shown in AI conversations
+- Quality of your code (10%) - refined through AI conversations
+- How well you organised your work (10%) - planned in AI conversations
+- How easy your app is to use (10%) - iterated in AI conversations
+- How effectively you used AI tools (30%) - demonstrated by strategic prompting
+- Quality of your AI interactions (15%) - showing your problem-solving journey
+- Technical implementation choices (10%) - explained in AI conversations
 
 ## Why This Project Matters
 
