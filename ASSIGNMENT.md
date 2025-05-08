@@ -160,8 +160,8 @@ Your implementation must demonstrate:
 
 You have three options for implementing the weather data component. All options can earn full marks for the core requirements, but more advanced implementations may qualify for bonus points.
 
-1. **Foundation Option**: Use the provided WeatherWrapper module
-   - A simplified interface to weather services that handles API complexities
+1. **Foundation Option**: Use the provided fetch-my-weather package
+   - A simplified interface to wttr.in weather services that handles API complexities
    - Provides consistent data structures and error handling
    - Allows you to focus on application logic and other components
    - *Perfect for getting started and meeting core requirements*
