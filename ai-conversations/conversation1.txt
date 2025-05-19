@@ -1,0 +1,29 @@
+Tool: ChatGPT  
+Date: 2025-05-10  
+
+Me:  
+Hi, I’m a postgraduate student studying Information Systems and Technology, but I have no programming background. This WeatherWise assignment looks overwhelming. What exactly is it asking me to do, and how do I start?
+
+AI:  
+No worries! I’ll walk you through it step by step.  
+WeatherWise is a hands-on Python programming project that lets you apply what you’ve learned across the semester. You’ll build a weather advisor app with these core features:
+
+1. 🌦 Fetch real-time weather data using an API (with a backup if needed)  
+2. 📊 Create weather visualisations using graphs (e.g., temperature and precipitation)  
+3. 🧠 Use Natural Language Processing (NLP) so users can ask weather-related questions  
+4. 🤖 Leverage AI tools like ChatGPT to improve your code, document your development process, and log interactions  
+5. 🗃 Submit everything to GitHub and upload a final ZIP to the LMS  
+
+You don’t need to code everything from scratch — you’ll be working within a provided Jupyter Notebook structure (`starter_notebook.ipynb`) in Google Colab. The goal is to fill in the code blocks step by step.
+
+Me:  
+What’s the first thing I should do?
+
+AI:  
+✅ Step 1: Go to the GitHub template and click "Use this template" to create your own repo (you’ve already done this).  
+✅ Step 2: Open `starter_notebook.ipynb` in Google Colab from your repo.  
+✅ Step 3: Work through the notebook from top to bottom — the sections guide you through setup, API, visualisation, NLP, and testing.  
+
+You’ll also need to log at least 5 meaningful AI conversations (like this one) in `.txt` format and include them in the `ai-conversations/` folder.
+
+Just take it one section at a time. I’ll help you at each step.
