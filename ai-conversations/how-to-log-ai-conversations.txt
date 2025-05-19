@@ -14,7 +14,7 @@ This folder is where you save your AI interactions used during development.
 
 ----------------------------------
 Tool: ChatGPT
-Date: 2025-04-15
+Date: 2025-05-15
 ----------------------------------
 
 Me: How do I parse temperature from this weather JSON?
@@ -24,10 +24,151 @@ Me: What if it’s missing?
 AI: Add error handling using `try/except`...
 
 (continue until the conversation ends)
-
 📌 No special formatting required.
 Just copy the entire conversation text and paste it here.
 
 ⚠️ Warning:
-Use the `.txt` format, **not screenshots or PDFs**. AI logs should be searchable and lightweight.
+Use the `.txt` format, not screenshots or PDFs. AI logs should be searchable and lightweight.
+
+✅ Fully Expanded AI Conversations — WeatherWise 
+
+
+📘 Conversation 1 – Understanding the Assignment + Where to Start
+
+Me:
+I’m a postgraduate student studying Information Systems and Technology, but I have no programming background. This WeatherWise assignment looks overwhelming. What exactly is it asking me to do, and how do I start?
+
+AI:
+No worries, I’ll walk you through it. WeatherWise is a practical Python programming project that lets you apply what you’ve learned across the semester. You’ll create a weather advisor app with the following core features:
+
+1. Real-time weather data retrieval** from a web API (like `wttr.in`)
+2. Data visualisation** of forecasts (e.g., temperature or precipitation trends)
+3. Natural language interaction**, so users can ask weather-related questions
+4. AI-powered development**, where you show how AI (like me!) helped you along the way
+
+The best way to begin is:
+
+* Go to the [WeatherWise GitHub template](https://github.com/michael-borck/weatherwise-template)
+* Click “Use this template” to make your own copy
+* Open the file `starter_notebook.ipynb` in Google Colab
+
+That notebook contains all the structure. From there, we’ll implement functions one step at a time. You’ve got this!
+
+
+
+ 📘 Conversation 2 – Step-by-Step Plan + Development Order
+
+Me:
+I’m not sure how to approach this project. What’s the recommended development order? Should I start with graphs, user interface, or weather data?
+
+AI:
+That’s a common question. The best way to avoid feeling overwhelmed is to break it into manageable stages. Here’s a recommended development sequence:
+
+1. Set Up
+
+   * Clone your GitHub repo using the template
+   * Open `starter_notebook.ipynb` in Colab
+   * Rename the notebook with your name or project title
+
+2. Weather Data (Step 1)
+
+   * Implement `get_weather_data(location)`
+   * Use `wttr.in` or the provided WeatherWrapper to get current & forecast data
+   * Test the output in a separate cell
+
+3. Data Visualisation (Step 2)
+
+   * Create `create_temperature_visualisation()` using `matplotlib`
+   * Do the same for precipitation
+   * Make sure graphs are labelled, clean, and readable
+
+4. User Interface (Step 3)
+
+   * Build `main_menu()`
+   * Use `pyinputplus` or `input()` to create options like “View Today’s Forecast”, “Show Graph”, etc.
+
+5. Natural Language Processing (Step 4)
+
+   * Implement `parse_weather_question()` to extract meaning from user queries
+   * Implement `generate_weather_response()` to reply in full sentences
+   * Use AI for support if stuck parsing input
+
+6. AI Prompting Logs + Reflection (Final Steps)
+
+   * Save at least **5 separate .txt conversation logs** like this one
+   * Write a `reflection.md` (300–500 words) discussing what you learned, what AI helped you with, and challenges faced
+
+7. Submission
+
+   * Push all your files to GitHub
+   * Download your repo as a `.zip` and submit to LMS
+
+📘 Conversation 3 – Where to Paste Code & How to Test
+
+Me:
+I have some of the function code you gave me, but I’m not sure where to paste it. Should I create a new cell, or paste inside the existing function definition? And how do I test if it works?
+
+AI:
+Excellent question! The Colab notebook is already scaffolded for you, meaning that many functions are already written in stub format. For example:
+
+```python
+def get_weather_data(location, forecast_days=5):
+    # TODO: implement this
+```
+
+You should **paste your implementation directly inside** the stub, replacing the `TODO` comment. There’s no need to create new cells for the functions themselves—just complete the ones provided.
+
+To test your function, go to a blank cell and write:
+
+```python
+weather = get_weather_data("Perth")
+print(weather)
+```
+
+That lets you check if the function returns data properly before moving on to visualisations or UI. It’s a good idea to test each function as soon as you write it!
+
+
+
+📘 Conversation 4 – Progress Checking + Submission Readiness
+
+Me:
+I’ve done the data retrieval, graphs, and started the interface. I’ve also had several conversations with AI like this. How do I know I’ve completed all the assignment requirements? What should I check before submitting?
+
+AI:
+Let’s go through the checklist:
+
+✅ `get_weather_data()` returns correct data
+✅ At least two graphs created using `matplotlib`
+✅ User interface/menu is working (console-based or with widgets)
+✅ `parse_weather_question()` and `generate_weather_response()` implemented
+✅ 5 AI conversations saved as `.txt` in `ai-conversations/`
+✅ `reflection.md` written (300–500 words)
+✅ GitHub repository has proper structure:
+ - `starter_notebook.ipynb`
+ - `submission/` folder with reflection
+ - `ai-conversations/` folder with AI logs
+✅ Full repository downloaded as `.zip` and ready to submit to LMS
+
+If all these are done, you’re good to go! 🎉
+
+
+
+Conversation 5 – Uploading Files to GitHub
+
+Me:
+I’ve written some `.txt` files for the AI logs and saved screenshots of my conversations. How do I upload these to the GitHub `ai-conversations/` folder?
+
+AI:
+GitHub prefers **plain text files** for these logs—no screenshots.
+
+Here’s how to upload them step-by-step:
+
+1. Open your GitHub repo
+2. Go to the `ai-conversations/` folder
+3. Click Add file → Create new file
+4. Name it `conversation1.txt`
+5. Paste your full conversation (like this one) in the editor
+6. Scroll down, write a commit message like “Add first AI log”, and click Commit changes
+
+Repeat this for logs 2 through 5. Each log should reflect a different aspect of your development journey (e.g., setting up, testing code, debugging, checking requirements, AI tips).
 
